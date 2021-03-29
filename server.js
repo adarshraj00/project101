@@ -38,8 +38,6 @@ app.post("/test", (req, res) => {
   }
   setTimeout(fun,res1.length*1000+3000);
 });
-app.listen(port, () => {
-  console.log("this app is listening");
-});
+app.listen(process.env.PORT || port, '0.0.0.0');
 
 
