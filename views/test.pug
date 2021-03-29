@@ -4,3 +4,11 @@ html
     body 
         h1=result 
         h1=roll
+        table(style='width:100%',border='1')
+            tr 
+                th roll  
+                th result
+            each v in param
+                tr(style='text-align:center')
+                    td=v.roll
+                    td=v.result

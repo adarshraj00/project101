@@ -33,8 +33,12 @@ app.post("/test", (req, res) => {
   }
   function fun(){
     console.log(ans);
-    var param={'roll':res1,'result':ans};
-    res.render('test',param);
+    var param=[];
+    for(var i=0;i<ans.length;i++){
+      param.push({'roll':res1[i],'result':ans[i]});
+    }
+    console.log(param);
+    res.render('test',{'param':param});
   }
   setTimeout(fun,res1.length*1000+3000);
 });
