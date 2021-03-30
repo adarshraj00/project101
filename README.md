@@ -1,5 +1,5 @@
 # Terribly tiny tales assignment
-##[Heroku deployment link](https://terriblytiny.herokuapp.com)
+[Heroku deployment link](https://terriblytiny.herokuapp.com)
 ### Used pugjs for creating views 
 
 ![Screenshot (43)](https://user-images.githubusercontent.com/43468326/112794827-3211a780-9085-11eb-8118-eef9a9ec12ad.png)
