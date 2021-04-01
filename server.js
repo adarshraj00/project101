@@ -29,13 +29,13 @@ app.post("/test", (req, res) => {
   for(var i=0;i<res1.length;i++){
     fetch('https://terriblytinytales.com/testapi?rollnumber='+res1[i])
     .then(res=>res.body.read().toString())
-    .then(a=>ans.push(a));
+    .then(a=>ans.push(a));//pushed result status for each particular roll number in an array
   }
   function fun(){
     console.log(ans);
     var param=[];
     for(var i=0;i<ans.length;i++){
-      param.push({'roll':res1[i],'result':ans[i]});
+      param.push({'roll':res1[i],'result':ans[i]}); 
     }
     console.log(param);
     res.render('test',{'param':param});
